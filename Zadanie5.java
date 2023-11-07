@@ -20,7 +20,14 @@ public class Zadanie5
             if(Character.isDigit(c2))//Проверка на наличие цифры в строке
             {
                 int k=c2-'0';
-                k++;
+                if(k==9)
+                {
+                    k=0;
+                }
+                else
+                {
+                    k++;
+                }
                 System.out.print(k+" ");
             }
 
